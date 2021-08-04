@@ -6,9 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="library-demo" />
         <module name="Restaurant_project -Student version" />
         <module name="Restaurant_project" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="library-demo" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
