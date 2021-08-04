@@ -99,7 +99,7 @@ class RestaurantTest {
     public void not_selecting_any_food_items_from_menu_should_display_order_cost_as_zero() {
 
         //Act
-        int orderValue = restaurant.displayOrderValue((ArrayList<String>) restaurant.selectedFoodItem);
+        int orderValue = restaurant.displayOrderValue((ArrayList<String>) restaurant.selectedFoodItems);
 
         //Assert
         assertEquals(0,orderValue);
@@ -118,7 +118,7 @@ class RestaurantTest {
         restaurant.addToOrder("Sweet corn soup");
 
         //Act
-        int orderValue = restaurant.displayOrderValue((ArrayList<String>) restaurant.selectedFoodItem);
+        int orderValue = restaurant.displayOrderValue((ArrayList<String>) restaurant.selectedFoodItems);
 
         //Assert
         assertEquals(438,orderValue);
@@ -139,7 +139,7 @@ class RestaurantTest {
         restaurant.removeFromOrder("Sizzling brownie");
 
         //Act
-        int orderValue = restaurant.displayOrderValue((ArrayList<String>) restaurant.selectedFoodItem);
+        int orderValue = restaurant.displayOrderValue((ArrayList<String>) restaurant.selectedFoodItems);
 
         //Assert
         assertEquals(119,orderValue);
